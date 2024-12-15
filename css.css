@@ -1,0 +1,120 @@
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: rgb(8, 8, 8);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+h2 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* صفحة التحميل */
+#splashScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#splashLogo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+#splashScreen h1 {
+  color: white;
+  font-size: 24px;
+}
+
+/* صفحة اللعبة */
+#gamePage {
+  display: none;
+}
+
+#board {
+  width: 80%;
+  height: 70vh;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: url("image/soil.png");
+  background-size: cover;
+  border: 3px solid white;
+  border-radius: 25px;
+  position: relative;
+}
+
+#board div {
+  width: 33%;
+  height: 33%;
+  background-image: url("image/pipe.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+#board div img {
+  width: 50px;
+  height: 50px;
+  user-select: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+#controls {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  #board {
+    width: 90%;
+    height: 60vh;
+  }
+
+  button {
+    width: 80%;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
